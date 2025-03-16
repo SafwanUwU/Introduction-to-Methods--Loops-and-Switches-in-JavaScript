@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Methods & Loops</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/feijoada" rel="stylesheet" />
+    <style></style>
+  </head>
+  <body
+    style="
+      font-family: Feijoada;
+      font-size: 35px;
+      text-align: center;
+      background-color: bisque;
+    "
+  >
+    <div style="background-color: sandybrown">
+      <h2>JavaScript String Methods and Loops</h2>
+      <p>Numbers form 1 to 10</p>
+      <p id="result"></p>
+    </div>
+    <script>
+      // for loop
+      var number = "";
+      for (i = 1; i < 11; i++) {
+        number += i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      // random value is rounded off
+      document.write("The random value is " + Math.floor(Math.random() * 100));
+      document.write("<br>");
+
+      // for displaying current Date
+      var date = new Date();
+      document.write("Today's Date is " + date.getDate());
+    </script>
+  </body>
+</html>
